@@ -1,0 +1,3 @@
+#!/bin/bash
+python3 -c "import socket as s; sock = s.socket(s.AF_UNIX); sock.bind('$1')"
+

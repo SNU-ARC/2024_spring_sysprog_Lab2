@@ -1,0 +1,24 @@
+#---------------------------------------------------------------------------------------------------
+# System Programming                         I/O Lab                                  Spring 2024
+#
+# test directory tree 1
+#
+f ./test1/one 1 0
+f ./test1/two 2 0 644
+f ./test1/three 3 0
+f ./test1/four 4 0
+f ./test1/five 5 0
+f ./test1/executable 100 0 755
+f ./test1/dir3/six 6 0
+f ./test1/dir3/seven 7 0
+f ./test1/dir3/eight 8 0
+f ./test1/dir3/nine 9 0
+f ./test1/dir3/ten 10 0
+f ./test1/dir2/six 6 0
+f ./test1/dir2/seven 7 0
+f ./test1/dir2/eight 8 0
+f ./test1/dir2/nine 9 0
+f ./test1/dir2/ten 10 0
+f ./test1/dir1/bothfilenameand.extensionarelong 100 0
+f ./test1/a/b/c/d/e/f 0 0
+f ./test1/a/b/f 0 0

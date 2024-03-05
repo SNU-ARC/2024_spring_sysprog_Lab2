@@ -1,0 +1,14 @@
+#---------------------------------------------------------------------------------------------------
+# System Programming                         I/O Lab                                  Spring 2024
+#
+# test directory tree 3
+#
+f ./test3/one 1 0
+f ./test3/two 2 0
+f ./test3/three 3 0
+f ./test3/four 4 0
+f ./test3/five 5 0
+l ./test3/subdir1/link ./test3/five
+l ./test3/subdir1/root /root
+p ./test3/subdir1/pipe
+s ./test3/subdir1/socket
