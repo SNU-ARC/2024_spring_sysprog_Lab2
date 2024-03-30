@@ -200,18 +200,23 @@ int main(int argc, char *argv[])
   // print grand total
   //
   if ((flags & F_SUMMARY) && (ndir > 1)) {
-    printf("Analyzed %d directories:\n"
-           "  total # of files:        %16d\n"
-           "  total # of directories:  %16d\n"
-           "  total # of links:        %16d\n"
-           "  total # of pipes:        %16d\n"
-           "  total # of sockets:      %16d\n",
-           ndir, tstat.files, tstat.dirs, tstat.links, tstat.fifos, tstat.socks);
+    if (flags & F_DIRONLY) {
+      printf("Analyzed %d directories:\n"
+             "  total # of directories:  %16d\n",
+             ndir, tstat.dirs);
+    } else {
+      printf("Analyzed %d directories:\n"
+             "  total # of files:        %16d\n"
+             "  total # of directories:  %16d\n"
+             "  total # of links:        %16d\n"
+             "  total # of pipes:        %16d\n"
+             "  total # of sockets:      %16d\n",
+             ndir, tstat.files, tstat.dirs, tstat.links, tstat.fifos, tstat.socks);
 
-    if (flags & F_VERBOSE) {
-      printf("  total file size:         %16llu\n", tstat.size);
+      if (flags & F_VERBOSE) {
+        printf("  total file size:         %16llu\n", tstat.size);
+      }
     }
-
   }
 
   //
