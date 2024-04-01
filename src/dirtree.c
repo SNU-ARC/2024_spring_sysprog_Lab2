@@ -3,7 +3,7 @@
 //
 /// @file
 /// @brief resursively traverse directory tree and list all entries
-/// @author <yourname>
+/// @author TH LEE
 /// @studid <studentid>
 //--------------------------------------------------------------------------------------------------
 
